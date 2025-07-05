@@ -1,0 +1,236 @@
+---
+alwaysApply: true
+---
+# Git Commit Message Rules for Cursor AI Agent
+
+## Overview
+When creating commit messages for the Syntheos Saga project, always follow the Conventional Commits v1.0.0 specification (https://www.conventionalcommits.org/en/v1.0.0/).
+
+## Commit Message Format
+All commit messages MUST use the following format:
+```
+<type>[optional scope]: <description>
+
+[optional body]
+
+[optional footer(s)]
+```
+
+## Required Types
+- **feat**: A new feature (correlates with MINOR in semantic versioning)
+- **fix**: A bug fix (correlates with PATCH in semantic versioning)
+
+## Additional Types
+- **docs**: Documentation only changes
+- **style**: Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)
+- **refactor**: A code change that neither fixes a bug nor adds a feature
+- **perf**: A code change that improves performance
+- **test**: Adding missing tests or correcting existing tests
+- **chore**: Changes to the build process or auxiliary tools and libraries such as documentation generation
+- **ci**: Changes to CI configuration files and scripts
+- **build**: Changes that affect the build system or external dependencies
+- **revert**: Reverts a previous commit
+
+## Project-Specific Scopes
+When creating commit messages, use these scopes to indicate the area of the codebase being modified:
+
+### Game-Related Scopes
+- **game**: General game logic
+- **ai**: AI-GM functionality
+- **player**: Player-related features
+- **map**: Map and tile-related features
+- **combat**: Combat system
+- **story**: Story and scenario features
+
+### Technical Scopes
+- **phaser**: Phaser engine related changes
+- **ui**: User interface changes
+- **assets**: Assets (images, audio, etc.)
+- **config**: Configuration files
+- **deps**: Dependencies
+
+### Development Scopes
+- **dev**: Development environment
+- **build**: Build system
+- **ci**: CI/CD
+
+## Breaking Changes
+When a commit introduces a breaking change, indicate it by:
+1. Adding a `!` after the type/scope: `feat!: change save format`
+2. Adding a `BREAKING CHANGE:` footer with description
+
+## Commit Message Examples
+
+### Feature Addition
+```
+feat(ui): add inventory system
+
+Implement a new inventory system that allows players to manage their items.
+Players can drag and drop items to organize their inventory.
+```
+
+### Bug Fix
+```
+fix(phaser): resolve sprite rendering issue on mobile devices
+
+Fixed an issue where sprites were not rendering correctly on mobile devices
+due to incorrect texture scaling.
+```
+
+### Documentation Update
+```
+docs: update README with new setup instructions
+
+Add detailed setup instructions for the development environment
+including Node.js version requirements and npm scripts.
+```
+
+### Breaking Change
+```
+feat(game)!: change character stats calculation
+
+BREAKING CHANGE: Character stats are now calculated using a different formula.
+Existing save files will need to be migrated to work with the new system.
+```
+
+## Rules for AI Agent
+1. **Always use lowercase** for type and scope
+2. **Use imperative mood** in the description (e.g., "add" not "adds" or "added")
+3. **No period at the end** of the description
+4. **Keep description under 50 characters** when possible
+5. **Use present tense** for the description
+6. **Include scope when relevant** to the change
+7. **Add body if the change needs explanation**
+8. **Add footer for breaking changes or issue references**
+
+## Japanese Language Support
+You may also create commit messages in Japanese when appropriate:
+```
+feat(ui): インベントリシステムの実装
+
+プレイヤーがアイテムを管理できるインベントリシステムを実装。
+ドラッグアンドドロップでアイテムの整理が可能。
+```
+
+## Important Notes
+- Each commit should represent a single logical change
+- Choose the most specific scope available
+- For breaking changes, always explain what breaks and how to migrate
+- Reference issues in the footer when applicable (e.g., "Closes #123")
+- Use the body to explain the "what" and "why" of the change, not the "how" # Git Commit Message Rules for Cursor AI Agent
+
+## Overview
+When creating commit messages for the Syntheos Saga project, always follow the Conventional Commits v1.0.0 specification (https://www.conventionalcommits.org/en/v1.0.0/).
+
+## Commit Message Format
+All commit messages MUST use the following format:
+```
+<type>[optional scope]: <description>
+
+[optional body]
+
+[optional footer(s)]
+```
+
+## Required Types
+- **feat**: A new feature (correlates with MINOR in semantic versioning)
+- **fix**: A bug fix (correlates with PATCH in semantic versioning)
+
+## Additional Types
+- **docs**: Documentation only changes
+- **style**: Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)
+- **refactor**: A code change that neither fixes a bug nor adds a feature
+- **perf**: A code change that improves performance
+- **test**: Adding missing tests or correcting existing tests
+- **chore**: Changes to the build process or auxiliary tools and libraries such as documentation generation
+- **ci**: Changes to CI configuration files and scripts
+- **build**: Changes that affect the build system or external dependencies
+- **revert**: Reverts a previous commit
+
+## Project-Specific Scopes
+When creating commit messages, use these scopes to indicate the area of the codebase being modified:
+
+### Game-Related Scopes
+- **game**: General game logic
+- **ai**: AI-GM functionality
+- **player**: Player-related features
+- **map**: Map and tile-related features
+- **combat**: Combat system
+- **story**: Story and scenario features
+
+### Technical Scopes
+- **phaser**: Phaser engine related changes
+- **ui**: User interface changes
+- **assets**: Assets (images, audio, etc.)
+- **config**: Configuration files
+- **deps**: Dependencies
+
+### Development Scopes
+- **dev**: Development environment
+- **build**: Build system
+- **ci**: CI/CD
+
+## Breaking Changes
+When a commit introduces a breaking change, indicate it by:
+1. Adding a `!` after the type/scope: `feat!: change save format`
+2. Adding a `BREAKING CHANGE:` footer with description
+
+## Commit Message Examples
+
+### Feature Addition
+```
+feat(ui): add inventory system
+
+Implement a new inventory system that allows players to manage their items.
+Players can drag and drop items to organize their inventory.
+```
+
+### Bug Fix
+```
+fix(phaser): resolve sprite rendering issue on mobile devices
+
+Fixed an issue where sprites were not rendering correctly on mobile devices
+due to incorrect texture scaling.
+```
+
+### Documentation Update
+```
+docs: update README with new setup instructions
+
+Add detailed setup instructions for the development environment
+including Node.js version requirements and npm scripts.
+```
+
+### Breaking Change
+```
+feat(game)!: change character stats calculation
+
+BREAKING CHANGE: Character stats are now calculated using a different formula.
+Existing save files will need to be migrated to work with the new system.
+```
+
+## Rules for AI Agent
+1. **Always use lowercase** for type and scope
+2. **Use imperative mood** in the description (e.g., "add" not "adds" or "added")
+3. **No period at the end** of the description
+4. **Keep description under 50 characters** when possible
+5. **Use present tense** for the description
+6. **Include scope when relevant** to the change
+7. **Add body if the change needs explanation**
+8. **Add footer for breaking changes or issue references**
+
+## Japanese Language Support
+You may also create commit messages in Japanese when appropriate:
+```
+feat(ui): インベントリシステムの実装
+
+プレイヤーがアイテムを管理できるインベントリシステムを実装。
+ドラッグアンドドロップでアイテムの整理が可能。
+```
+
+## Important Notes
+- Each commit should represent a single logical change
+- Choose the most specific scope available
+- For breaking changes, always explain what breaks and how to migrate
+- Reference issues in the footer when applicable (e.g., "Closes #123")
+- Use the body to explain the "what" and "why" of the change, not the "how" 
