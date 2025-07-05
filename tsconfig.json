@@ -1,12 +1,15 @@
 {
   "compilerOptions": {
-    "target": "ES2015",
-    "module": "ES2020",
+    "target": "ESNext",
+    "module": "ESNext",
     "strict": true,
-    "outDir": "./dist",
-    "rootDir": "./src",
     "esModuleInterop": true,
-    "moduleResolution": "node"
+    "moduleResolution": "bundler",
+    "baseUrl": "./src",
+    "paths": {
+      "@/*": ["*"],
+      "@map/*": ["map/*"]
+    }
   },
   "include": ["src/**/*"]
 }
