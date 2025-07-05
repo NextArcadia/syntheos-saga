@@ -10,3 +10,7 @@ AI‑GM 2D Tile‑TRPG “Syntheos Saga” — powered by GPT‑4o/4.1/o3
    ```bash
    npm run dev
    ```
+3. 本番用ビルドを生成するには次を実行します。
+   ```bash
+   npm run build
+   ```
