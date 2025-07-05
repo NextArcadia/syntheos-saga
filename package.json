@@ -1,0 +1,20 @@
+{
+  "name": "syntheos-saga",
+  "version": "1.0.0",
+  "description": "AI‑GM 2D Tile‑TRPG “Syntheos Saga” — powered by GPT‑4o/4.1/o3",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"No tests\"",
+    "dev": "npx http-server -c-1 -p 5173"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "phaser": "^3.70.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.10"
+  }
+}
