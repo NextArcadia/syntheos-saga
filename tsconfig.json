@@ -9,7 +9,8 @@
     "paths": {
       "@/*": ["*"],
       "@map/*": ["map/*"]
-    }
+    },
+    "types": ["vitest/globals", "vitest/jsdom"]
   },
   "include": ["src/**/*"]
 }
